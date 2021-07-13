@@ -9,7 +9,9 @@ body{
 
 menu{
     display: flex;
-    align-items: column;
+    flex-direction: column;
+    align-items: center; 
+    
 }
 .container{
     background: #FFFFFF;
@@ -44,4 +46,25 @@ hr{
     Width: 56px;
     Height: 56px;
     margin-right: 18px;
+}
+
+/* Top Blogs style */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+}
+
+.blog-banner{
+    margin-right: 16px;
+}
+
+.blog .blog-banner img{
+    width: 224px;
+    height: 127px;
 }
